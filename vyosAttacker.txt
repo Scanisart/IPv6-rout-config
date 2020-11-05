@@ -1,0 +1,20 @@
+
+
+
+configure
+set system host-name Attacker
+set interfaces ethernet eth0 address eui64 2001:db8:acad:b::1/64
+set interfaces ethernet eth1 address fc00::2/64
+
+set protocols static route6 2001:db8:acad:b::/64 next-hop fc00::1
+commit
+save
+
+
+
+
+
+
+
+
+

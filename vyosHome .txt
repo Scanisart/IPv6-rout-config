@@ -1,0 +1,24 @@
+
+configure
+set system host-name Home
+set interfaces ethernet eth1 address 2001:db8:acad:a::1/64
+set interfaces ethernet eth0 address fc00:2/64
+
+set protocols static route6 2001:db8:acad:b::/64 next-hop fc00::2
+commit
+save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
